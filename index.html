@@ -1,0 +1,295 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guia de Requerimento</title>
+</head>
+<body>
+
+    <form>
+
+        <fieldset>
+            <legend>Protocolo de inscrição</legend>
+
+            <label for="protocolo">Protocolo n.º:</label>
+            <input type="text" id="protocolo" name="protocolo">
+
+            <br><br>
+
+            <label for="requerente">Requerente:</label>
+            <input type="text" id="requerente" name="requerente" required>
+
+            &nbsp;&nbsp;
+
+            <label for="matricula">N.º de matrícula:</label>
+            <input type="number" id="matricula" name="matricula">
+
+            <br><br>
+
+            <label for="nascimento">Data nascimento:</label>
+            <input type="date" id="nascimento" name="nascimento">
+
+            <br><br>
+
+            <label for="filiacao">Filiação:</label>
+            <input type="text" id="filiacao" name="filiacao">
+
+            &nbsp;&nbsp;
+
+            <label for="naturalidade">Naturalidade:</label>
+            <input type="text" id="naturalidade" name="naturalidade">
+
+            <br><br>
+
+            <label for="curso">Curso:</label>
+            <input type="text" id="curso" name="curso">
+
+            &nbsp;&nbsp;
+
+            <label for="periodo">Período:</label>
+            <input type="text" id="periodo" name="periodo">
+
+            &nbsp;&nbsp;
+
+            <label for="turno">Turno:</label>
+            <input type="text" id="turno" name="turno">
+
+            <br><br>
+
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone">
+
+            &nbsp;&nbsp;
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email">
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Requerimentos</legend>
+
+            <input type="checkbox" id="segunda" name="requerimento" value="segunda">
+            <label for="segunda">01 - 2ª Via (especificar)</label>
+
+            <br>
+
+            <input type="checkbox" id="aproveitamento" name="requerimento" value="aproveitamento">
+            <label for="aproveitamento">02 - Aproveitamento de Disciplina (anexar Histórico Escolar e programa da Disciplina)</label>
+
+            <br>
+
+            <input type="checkbox" id="matricula_fora" name="requerimento" value="matricula_fora">
+            <label for="matricula_fora">03 - Matrícula fora do prazo (justificar)</label>
+
+            <br>
+
+            <input type="checkbox" id="cancelamento" name="requerimento" value="cancelamento">
+            <label for="cancelamento">04 - Cancelamento da Matrícula</label>
+
+            <br>
+
+            <input type="checkbox" id="colacao" name="requerimento" value="colacao">
+            <label for="colacao">05 - Colação de Grau / Colação Especial (justificar)</label>
+
+            <br>
+
+            <input type="checkbox" id="declaracao" name="requerimento" value="declaracao">
+            <label for="declaracao">06 - Declaração (especificar)</label>
+
+            <br>
+
+            <input type="checkbox" id="diploma" name="requerimento" value="diploma">
+            <label for="diploma">07 - Diploma (especificar)</label>
+
+            <br>
+
+            <input type="checkbox" id="historico" name="requerimento" value="historico">
+            <label for="historico">08 - Histórico Escolar</label>
+
+            <br>
+
+            <input type="checkbox" id="reabertura" name="requerimento" value="reabertura">
+            <label for="reabertura">09 - Reabertura de Matrícula</label>
+
+            <br>
+
+            <input type="checkbox" id="segunda_chamada" name="requerimento" value="segunda_chamada">
+            <label for="segunda_chamada">10 - Segunda Chamada (anexar justificativa e especificar)</label>
+
+            <br>
+
+            <input type="checkbox" id="reingresso" name="requerimento" value="reingresso">
+            <label for="reingresso">11 - Reingresso</label>
+
+            <br>
+
+            <input type="checkbox" id="trancamento_disciplina" name="requerimento" value="trancamento_disciplina">
+            <label for="trancamento_disciplina">12 - Trancamento de Disciplina (especificar)</label>
+
+            <br>
+
+            <input type="checkbox" id="trancamento" name="requerimento" value="trancamento">
+            <label for="trancamento">13 - Trancamento de Matrícula (anexar documentação comprobatória)</label>
+
+            <br>
+
+            <input type="checkbox" id="transferencia" name="requerimento" value="transferencia">
+            <label for="transferencia">14 - Transferência para outra Instituição</label>
+
+            <br>
+
+            <input type="checkbox" id="validacao" name="requerimento" value="validacao">
+            <label for="validacao">15 - Validação de Conhecimento (especificar)</label>
+
+            <br>
+
+            <input type="checkbox" id="reajuste" name="requerimento" value="reajuste">
+            <label for="reajuste">16 - Reajuste</label>
+
+            <br>
+
+            <input type="checkbox" id="recorrencia" name="requerimento" value="recorrencia">
+            <label for="recorrencia">17 - Recorrência de Prova</label>
+
+            <br>
+
+            <input type="checkbox" id="transporte" name="requerimento" value="transporte">
+            <label for="transporte">18 - AUXÍLIO - Transporte</label>
+
+            <br>
+
+            <input type="checkbox" id="moradia" name="requerimento" value="moradia">
+            <label for="moradia">19 - AUXÍLIO - Moradia</label>
+
+            <br>
+
+            <input type="checkbox" id="oculos" name="requerimento" value="oculos">
+            <label for="oculos">20 - AUXÍLIO - Óculos</label>
+
+            <br>
+
+            <input type="checkbox" id="pais" name="requerimento" value="pais">
+            <label for="pais">21 - AUXÍLIO - Pais e Mães</label>
+
+            <br>
+
+            <input type="checkbox" id="outro" name="requerimento" value="outro">
+            <label for="outro">22 - Outros (especificar)</label>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Especificar</legend>
+
+            <label for="especificacao">Especificar:</label>
+
+            <br>
+
+            <textarea id="especificacao" name="especificacao" rows="3" cols="70"></textarea>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Justificar</legend>
+
+            <label for="justificativa">Justificar:</label>
+
+            <br>
+
+            <textarea id="justificativa" name="justificativa" rows="3" cols="70"></textarea>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Declaração</legend>
+
+            <p>
+                DECLARO CONHECER O REGIMENTO DESTA IFE, BEM COMO O PRAZO
+                NECESSÁRIO À TRAMITAÇÃO DO PROCESSO.
+            </p>
+
+            <br>
+
+            <label for="assinatura">Requerente (ass. legível):</label>
+            <input type="text" id="assinatura" name="assinatura">
+
+            &nbsp;&nbsp;
+
+            <label for="funcionario">Funcionário (ass. legível):</label>
+            <input type="text" id="funcionario" name="funcionario">
+
+            <br><br>
+
+            <label for="local">Cedro - CE,</label>
+            <input type="text" id="local" name="local">
+
+            <label for="dia">de</label>
+            <input type="text" id="dia" name="dia">
+
+            <label for="mes">de</label>
+            <input type="text" id="mes" name="mes">
+
+            <label for="ano">de 20</label>
+            <input type="number" id="ano" name="ano">
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Visto (Coordenação de Assuntos Estudantis)</legend>
+
+            <input type="checkbox" id="nao_chave" name="visto_coord" value="nao_chave">
+            <label for="nao_chave">O requerente NÃO deve chave do armário</label>
+
+            <br><br>
+
+            <input type="checkbox" id="deve_chave" name="visto_coord" value="deve_chave">
+            <label for="deve_chave">O requerente deve chave do armário:</label>
+
+            <br><br>
+
+            <label for="coord_observacao">Observação:</label>
+            <input type="text" id="coord_observacao" name="coord_observacao">
+
+            <br><br>
+
+            <label for="responsavel_coord">Responsável (ass. legível):</label>
+            <input type="text" id="responsavel_coord" name="responsavel_coord">
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Visto (Biblioteca)</legend>
+
+            <input type="checkbox" id="nao_livros" name="visto_biblioteca" value="nao_livros">
+            <label for="nao_livros">O requerente NÃO deve livros na biblioteca</label>
+
+            <br><br>
+
+            <input type="checkbox" id="deve_livros" name="visto_biblioteca" value="deve_livros">
+            <label for="deve_livros">O requerente deve livros na biblioteca:</label>
+
+            <br><br>
+
+            <label for="biblioteca_observacao">Observação:</label>
+            <input type="text" id="biblioteca_observacao" name="biblioteca_observacao">
+
+            <br><br>
+
+            <label for="responsavel_biblioteca">Responsável (ass. legível):</label>
+            <input type="text" id="responsavel_biblioteca" name="responsavel_biblioteca">
+
+        </fieldset>
+
+        <br>
+
+        <input type="submit" value="Enviar">
+
+        <input type="reset" value="Limpar">
+
+    </form>
+
+</body>
+</html>
